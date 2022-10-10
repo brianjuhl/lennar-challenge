@@ -84,7 +84,6 @@ const Landing: NextPage = () => {
                       variables: {
                         input: {
                           email,
-                          // didn't get a change to implement UI for these fields
                           name: 'Jon Snow',
                           username: 'jon_snow',
                         },
