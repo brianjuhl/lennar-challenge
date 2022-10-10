@@ -41,19 +41,6 @@ const Landing: NextPage = () => {
     },
   ];
 
-  const handleSubmit = async () => {
-    await createUser({
-      variables: {
-        input: {
-          email,
-          // didn't get around to implementing UI for these fields
-          name: 'Jon Snow',
-          username: 'jon_snow',
-        },
-      },
-    });
-  };
-
   return (
     <>
       <Head>
@@ -90,7 +77,21 @@ const Landing: NextPage = () => {
               <p>Free trial started! Please check your email.</p>
             ) : (
               <>
-                <form onSubmit={handleSubmit}>
+                <form
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    await createUser({
+                      variables: {
+                        input: {
+                          email,
+                          // didn't get a change to implement UI for these fields
+                          name: 'Jon Snow',
+                          username: 'jon_snow',
+                        },
+                      },
+                    });
+                  }}
+                >
                   <Input
                     type="email"
                     required
