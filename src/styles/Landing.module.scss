@@ -1,0 +1,149 @@
+.hero {
+  margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 144px;
+  }
+
+  .hero-text,
+  .entry-text {
+    margin-top: var(--spacing-lg);
+  }
+
+  .hero-text {
+    h1,
+    span {
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: -0.025em;
+
+      @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 48px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        font-size: 72px;
+        line-height: 72px;
+      }
+    }
+  }
+
+  .entry-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-300);
+    max-width: 344px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 369px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 28px;
+      max-width: 492px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      line-height: 28px;
+      max-width: 592px;
+    }
+  }
+
+  h1 {
+    color: #fff;
+
+    span {
+      display: block;
+      color: var(--indigo-400);
+    }
+  }
+
+  .form-container {
+    margin-top: 40px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 48px;
+    }
+
+    form {
+      display: flex;
+      flex-flow: column;
+
+      @media screen and (min-width: 768px) {
+        flex-flow: row;
+      }
+
+      input {
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+          width: 358px;
+        }
+
+        @media screen and (min-width: 1024px) {
+          width: 425px;
+        }
+      }
+
+      button {
+        margin-top: var(--spacing-sm);
+        @media screen and (min-width: 768px) {
+          margin-top: 0;
+          margin-left: var(--spacing-sm);
+        }
+      }
+    }
+
+    .legal-text {
+      margin-top: var(--spacing-sm);
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--gray-300);
+
+      a {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #fff;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-top: var(--spacing-md);
+        max-width: 509px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        max-width: 576px;
+      }
+    }
+  }
+}
+
+.illustration {
+  @media screen and (max-width: 768px) {
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 625px;
+    position: absolute;
+    top: 100px;
+    left: 55%;
+  }
+}

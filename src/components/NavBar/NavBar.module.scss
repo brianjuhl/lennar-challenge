@@ -1,0 +1,122 @@
+.navbar {
+  padding-top: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 33px;
+    height: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 41.25px;
+      height: 37.5px;
+    }
+  }
+
+  .desktop-nav,
+  .desktop-actions {
+    display: none;
+  }
+
+  .desktop-nav {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin-left: var(--spacing-xxl);
+
+      a {
+        margin-right: var(--spacing-xl);
+      }
+    }
+  }
+
+  .desktop-actions {
+    @media screen and (min-width: 768px) {
+      width: 207px;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        padding-top: 9px;
+        padding-bottom: 9px;
+      }
+    }
+  }
+
+  .menu-button-container {
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mobile-menu,
+  .back-drop {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mobile-menu {
+    z-index: 2;
+    position: absolute;
+    top: var(--spacing-xs);
+    left: var(--spacing-xs);
+    width: calc(100% - var(--spacing-md));
+    height: 392px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+
+  .mobile-nav {
+    margin-top: 76px;
+    padding: var(--spacing-xs);
+    display: flex;
+    flex-flow: column;
+
+    a {
+      font-weight: 400;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .mobile-actions {
+    padding: var(--spacing-xs);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    button {
+      background-color: var(--indigo-600);
+    }
+
+    div {
+      margin-top: var(--spacing-md);
+      text-align: center;
+
+      span {
+        padding-right: 4px;
+        color: var(--gray-500);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .back-drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    background: #6b7280;
+  }
+
+  .logo,
+  .menu-button-container {
+    z-index: 999;
+  }
+}

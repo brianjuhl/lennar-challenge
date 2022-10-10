@@ -1,0 +1,40 @@
+.notice-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 309px;
+  height: 32px;
+  background-color: #000000;
+  border-radius: 14px;
+  padding: 4px 8px 4px 4px;
+  cursor: pointer;
+
+  .notice {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--indigo-500);
+    width: 108px;
+    height: 24px;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .call-to-action {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 12px;
+  }
+}
