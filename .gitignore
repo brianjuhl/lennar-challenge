@@ -31,6 +31,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# chromatic
+build-storybook.log
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
